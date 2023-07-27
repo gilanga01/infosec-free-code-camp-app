@@ -1,7 +1,7 @@
 const express = require('express');
 const helmet = require('helmet');
 const app = express();
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 1500;
 app.listen(PORT, () => {
   console.log(` 🥦Useful programmer on Information Security App server started on Port ${PORT}`);
 })
@@ -59,7 +59,7 @@ app.use('/_api', api);
 app.get("/", function (request, response) {
   response.sendFile(__dirname + '/views/index.html');
 });
-let port = process.env.PORT || 8080;
+let port = process.env.PORT || 1500;
 app.listen(PORT, () => {
   console.log(` 🥦Useful programmer on Information Security App server started on Port ${port}`);
 });
